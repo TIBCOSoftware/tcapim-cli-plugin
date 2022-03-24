@@ -12,7 +12,7 @@ To be used as an extension of [TIBCO Cloud™ CLI](https://github.com/TIBCOSoftw
 # Usage
 ```
 Install Plugin
-  $ tibco plugin:install @tibco-software/cli-plugin-tcapim
+  $ tibco plugins:install @tibco-software/cli-plugin-tcapim
 USAGE
   $ tibco tcapim:graphql-policy [flags]
 ```
