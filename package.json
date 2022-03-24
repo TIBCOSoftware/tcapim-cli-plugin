@@ -1,0 +1,63 @@
+{
+  "name": "@tibco-software/cli-plugin-tcapim",
+  "description": "Developer CLI Plugin for TIBCO Cloud API Management",
+  "version": "1.0.0-beta",
+  "author": "ajjoshi-tibco",
+  "bugs": "https://github.com/TIBCOSoftware/tcapim-cli-plugin/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@tibco-software/cic-cli-core": "^1.0.0-beta.1",
+    "adm-zip": "^0.5.9",
+    "graphql": "^16.0.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@oclif/plugin-help": "^3.3.1",
+    "eslint": "^8.6.0",
+    "globby": "^10.0.2",
+    "nyc": "^15.1.0",
+    "mocha": "^9.1.3",
+    "chai": "^4.3.4"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/TIBCOSoftware/tcapim-cli-plugin",
+  "keywords": [
+    "oclif-plugin",
+    "tcapim",
+    "cli plugin tcapim",
+    "tibco cli plugin",
+    "tibco cli",
+    "graphql policies",
+    "api management",
+    "tibco tcapim"
+  ],
+  "license": "BSD",
+  "oclif": {
+    "topics": {
+      "tcapim": {
+        "description": "Manage applications for TIBCO Cloud API Management"
+      }
+    },
+    "commands": "./src/commands",
+    "bin": "tibco",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "https://github.com/TIBCOSoftware/tcapim-cli-plugin",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
