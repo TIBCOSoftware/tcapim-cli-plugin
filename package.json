@@ -39,7 +39,7 @@
     "api management",
     "tibco tcapim"
   ],
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "oclif": {
     "topics": {
       "tcapim": {
